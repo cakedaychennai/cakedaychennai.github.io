@@ -1,3 +1,8 @@
+A Jekyll created site for CakeDay, a bakery in Chennai, India.
+Uses Spectral theme created by @n330 and ported to Jekyll by @arkadianriver with slight customization.
+
+ORIGINAL README FOR SPECTRAL (PORTED TO JEKYLL)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A Jekyll port of the Spectral theme by HTML5 UP.
 Find the original non-jekyll theme at: http://html5up.net/
