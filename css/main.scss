@@ -799,7 +799,9 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 		
-		/* 20170821 Table Fixed Width for Price Column */
+		/* 20170831 Table Fixed Width for Price Columns */
+		thead tr th:nth-last-child(2),
+		tbody tr td:nth-last-child(2),
 		thead tr th:last-child,
 		tbody tr td:last-child {
 			  width: 5.2em;
