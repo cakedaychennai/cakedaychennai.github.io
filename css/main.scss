@@ -1467,6 +1467,19 @@ $baseurl: '{{ site.baseurl }}/images';
 							}
 						}
 
+						&.menuDesktop {
+							outline: 0;
+							position: relative;
+
+							@include breakpoint(small) {
+								padding: 0 1.5em;
+
+								span {
+									display: none;
+								}
+							}
+						}
+
 						@include breakpoint(small) {
 							padding: 0 0 0 1.5em;
 						}
