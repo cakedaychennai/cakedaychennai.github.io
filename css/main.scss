@@ -287,6 +287,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="phoneno"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
@@ -305,7 +306,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&:focus {
-			box-shadow: 0 0 0 2px _palette(accent1, bg);
+			box-shadow: 0 0 0 2px _palette(accent1, form-border);
 		}
 	}
 
@@ -336,6 +337,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="phoneno"],
 	select {
 		height: _size(element-height);
 	}
@@ -390,7 +392,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(accent1, bg);
+				box-shadow: 0 0 0 2px _palette(accent1, form-border);
 			}
 		}
 	}
@@ -1098,9 +1100,11 @@ $baseurl: '{{ site.baseurl }}/images';
 			input[type="text"],
 			input[type="password"],
 			input[type="email"],
+			input[type="phoneno"],
 			select,
 			textarea {
 				background: _palette($p, border-bg);
+				resize: none;
 			}
 
 			.select-wrapper {
