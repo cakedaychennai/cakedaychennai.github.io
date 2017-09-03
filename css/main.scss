@@ -1388,6 +1388,17 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+	/* 20170903 for Gallery */
+	body.galleryOpen {
+		#page-wrapper {
+			opacity: 0.35;
+
+			&:before {
+				display: block;
+			}
+		}
+	}
+
 /* Header */
 
 	#header {
