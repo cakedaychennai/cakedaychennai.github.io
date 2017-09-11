@@ -734,7 +734,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		overflow-x: auto;
 	}
 
-	table {
+	#defaultTable table {
 		margin: 0 0 _size(element-margin) 0;
 		width: 100%;
 
@@ -1172,7 +1172,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		// Table
 
-			table {
+			#defaultTable table {
 				tbody {
 					tr {
 						border-color: _palette($p, border);
