@@ -1630,8 +1630,18 @@ $baseurl: '{{ site.baseurl }}/images';
 			opacity: 0;
 		}
 
+		.carousel-caption {
+			top: 50%;
+			margin-top: -150px;
+			padding: 0%;
+
+			p {
+				font-size: 1em;
+			}
+		}
+
 		@include breakpoint(small) {
-			@include padding(7em, 3em);
+			// @include padding(7em, 3em);
 			height: auto;
 			min-height: 0;
 
@@ -1645,6 +1655,17 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			.more {
 				display: none;
+			}
+
+			.carousel-caption {
+				top: 10%;
+				margin-top: 0;
+				padding: 20% 0%;
+
+				p {
+					letter-spacing: 0.115em;
+					font-size: 0.8em;
+				}
 			}
 		}
 	}

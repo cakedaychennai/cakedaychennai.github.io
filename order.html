@@ -3,31 +3,26 @@ layout: page
 title: Order
 ---
 			<section>
-				<p><u>Note:</u><br /> After submitting your order, you will receive a call from our manager to confirm the order within half an hour during working hours.<br />
-				<br />If the order is submitted during closed hours, you will get the confirmation call the next working day.</p>
 				<h4>Submit an Order</h4>
 				<form method="post" action="#">
 					<div class="row uniform">
-						<div class="6u 12u$(xsmall)">
-							<input type="text" name="demo-firstname" id="demo-firstname" value="" placeholder="First Name" />
-						</div>
-						<div class="6u$ 12u$(xsmall)">
-							<input type="text" name="demo-lastname" id="demo-lastname" value="" placeholder="Last Name" />
+						<div class="12u$">
+							<input type="text" name="order-name" id="order-name" value="" placeholder="Name" />
 						</div>
 						<div class="6u 12u$(xsmall)">
-							<input type="phoneno" name="demo-phoneno" id="demo-phoneno" value="" placeholder="Phone No." />
+							<input type="phoneno" name="order-phoneno" id="order-phoneno" value="" placeholder="Phone No." />
 						</div>
 						<div class="6u$ 12u$(xsmall)">
-							<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+							<input type="email" name="order-email" id="order-email" value="" placeholder="Email" />
 						</div>
 						
 						<div class="12u$">
-							<textarea name="demo-address" id="demo-address" placeholder="Address" rows="3"></textarea>
+							<textarea name="order-address" id="order-address" placeholder="Address" rows="3"></textarea>
 						</div>
 
 						<div class="12u$">
 							<div class="select-wrapper">
-								<select name="demo-category" id="demo-category">
+								<select name="order-category" id="order-category">
 									<option value="">- Choose your cake -</option>
 									<option value="Black Forest">Black Forest</option>
 									<option value="White Forest">White Forest</option>
@@ -56,25 +51,20 @@ title: Order
 						</div>
 
 						<div class="6u 12u$(small)">
-							<input type="radio" id="demo-weight-halfkg" name="demo-weight">
-							<label for="demo-weight-halfkg">&frac12; kg</label>
+							<input type="radio" id="order-weight-halfkg" name="order-weight">
+							<label for="order-weight-halfkg">&frac12; kg</label>
 						</div>
 						<div class="6u 12u$(small)">
-							<input type="radio" id="demo-weight-onekg" name="demo-weight" checked>
-							<label for="demo-weight-onekg">1 kg</label>
+							<input type="radio" id="order-weight-onekg" name="order-weight" checked>
+							<label for="order-weight-onekg">1 kg</label>
+						</div>
+						
+						<div class="12u$">
+							<textarea name="order-message" id="order-message" placeholder="Remarks" rows="2"></textarea>
 						</div>
 
-						<!-- <div class="6u 12u$(small)">
-							<input type="checkbox" id="demo-copy" name="demo-copy">
-							<label for="demo-copy">Email me a copy</label>
-						</div>
-						<div class="6u$ 12u$(small)">
-							<input type="checkbox" id="demo-human" name="demo-human" checked>
-							<label for="demo-human">Not a robot</label>
-						</div> -->
-						<div class="12u$">
-							<textarea name="demo-message" id="demo-message" placeholder="Add comments to our Chef" rows="2"></textarea>
-						</div>
+						<input type="text" name="order-price" id="order-price" value="" placeholder="0" disabled style="display: none"/>
+						
 						<div class="12u$">
 							<ul class="actions">
 								<li><input type="submit" value="Submit Order" class="special disabled" /></li>
@@ -83,5 +73,7 @@ title: Order
 						</div>
 					</div>
 				</form>
+				<p><u>Note:</u><br /> After submitting your order, you will receive a call from our manager to confirm the order within half an hour during working hours.<br />
+				<br />If the order is submitted during closed hours, you will get the confirmation call the next working day.</p>
 			</section>
 			
