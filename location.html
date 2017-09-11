@@ -17,7 +17,7 @@ title: Location
             var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
             var osmAttrib='&#169; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
             var osm = new L.TileLayer(osmUrl, {minZoom: 10, maxZoom: 20, attribution: osmAttrib});		
-            map.setView(new L.LatLng(13.08537, 80.20431), 17);
+            map.setView(new L.LatLng(13.08537, 80.20431), 16);
             map.addLayer(osm);
 						map.scrollWheelZoom.disable();
             //map.once('focus', function() { map.scrollWheelZoom.enable(); });
