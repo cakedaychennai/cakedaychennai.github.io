@@ -1496,6 +1496,36 @@ $baseurl: '{{ site.baseurl }}/images';
 							}
 						}
 
+						&.menuDesktop-order {
+							outline: 0;
+							position: relative;
+
+							// taken from button special
+							border-radius: 3px;
+							cursor: pointer;
+							font-weight: _font(weight-bold);
+							line-height: 3.125em;
+							background-color: _palette(accent6, bg);
+							box-shadow: none !important;
+							color: _palette(accent6, fg-bold) !important;
+				
+							&:hover {
+								background-color: lighten(_palette(accent6, bg), 5) !important;
+							}
+				
+							&:active {
+								background-color: darken(_palette(accent6, bg), 5) !important;
+							}
+
+							@include breakpoint(small) {
+								padding: 0 1.5em;
+
+								// span {
+								// 	display: none;
+								// }
+							}
+						}
+
 						@include breakpoint(small) {
 							padding: 0 0 0 1.5em;
 						}
